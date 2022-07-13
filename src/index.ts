@@ -179,3 +179,21 @@ let numArray = getArray<number>([1, 2, 3, 4]);
 let strArray = getArray<string>(["Brad", "Jack", "John"]);
 
 strArray.push("Hello");
+
+//Create a React typescript app
+//npm create-react-app . --template typescript
+
+// export interface Props {
+//     title: string
+//     color?: string
+// }
+
+// const Header = (props: Props) => {
+//     return (
+//         <header>
+//             <h1 style={{ color: props.color ? props.color : "blue" }}>
+//                 {props.title}
+//             </h1>
+//         </header>
+//     )
+// }
