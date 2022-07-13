@@ -166,8 +166,16 @@ class Employee extends Person {
   }
 }
 
-const emp = new Employee(3, "Vera", "developer")
+const emp = new Employee(3, "Vera", "developer");
 
-console.log(emp.register())
+console.log(emp.register());
 
+//Generics
+function getArray<T>(items: T[]): T[] {
+  return new Array().concat(items);
+}
 
+let numArray = getArray<number>([1, 2, 3, 4]);
+let strArray = getArray<string>(["Brad", "Jack", "John"]);
+
+strArray.push("Hello");
